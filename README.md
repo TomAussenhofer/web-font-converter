@@ -28,6 +28,21 @@ or
 web-font-converter ./assets/fonts/MyFont.ttf ./assets/fonts/MyNewFontName
 ```
 
+# Example Usage after creation in .css / .sass / .scss
+```css
+@font-face {
+  font-family: 'My Font';
+  src: url('../assets/fonts/MyFont/MyFont-Regular.ttf') format('truetype');
+  src: local('My Font'),
+       local('MyFont-Regular'),
+       url(../assets/fonts/MyFont/MyFont-Regular.woff2) format('woff2'),
+       url(../assets/fonts/MyFont/MyFont-Regular.woff) format('woff'),
+       url(../assets/fonts/MyFont/MyFont-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+```
+
 # Credits
-The dependant npm packages for conversion are created by Vitaly Puzrin.
+The dependant npm packages for conversion were created by Vitaly Puzrin.
 This wrapper was written by myself, Tom Außenhofer.
