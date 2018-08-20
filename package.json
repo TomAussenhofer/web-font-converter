@@ -1,0 +1,24 @@
+{
+  "name": "web-font-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "convert-font:Lato": "node index.js ./assets/Lato/Lato-Regular.ttf",
+    "convert-font:IndieFlower": "node index.js ./assets/Indie_Flower/IndieFlower.ttf",
+    "convert-font:Raleway": "node index.js ./assets/Raleway/Raleway-Regular.ttf",
+    "convert-font:OpenSans": "node index.js ./assets/Roboto/Roboto-Regular.ttf",
+    "convert-font:Roboto": "node index.js ./assets/Open_Sans/OpenSans-Regular.ttf"
+  },
+  "bin": {
+    "web-font-converter": "bin/web-font-converter"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ttf2eot": "^2.0.0",
+    "ttf2woff": "^2.0.1",
+    "wawoff2": "^1.0.2"
+  }
+}
